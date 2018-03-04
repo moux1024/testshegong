@@ -24,6 +24,9 @@ function transformFileToDataUrl(file) {
 		lrzOption: {
 			quality: 1
 		},
+		style: {
+			maskColor: 'rgba(0,0,0,1)'
+		},
 		done: function(dataURL) {
 			pc.clear()
 			cut.style.display = 'none'

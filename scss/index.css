@@ -25,6 +25,9 @@
   margin-bottom: auto;
   margin-top: auto; }
 
+a, img {
+  -webkit-touch-callout: none; }
+
 html, body {
   margin: 0;
   padding: 0;
