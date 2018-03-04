@@ -282,6 +282,7 @@ html,body{
 			border:0;
 			@include height(40);
 			@include width(80);
+			@include fsz(13);
 		}
 	}
 	.cut_ok{
@@ -296,6 +297,7 @@ html,body{
 			border:0;
 			@include height(40);
 			@include width(80);
+			@include fsz(13);
 		}
 	}
 }

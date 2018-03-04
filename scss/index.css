@@ -254,7 +254,8 @@ input, select, button {
       border-radius: 3.0769230769rem;
       border: 0;
       height: 1.2307692308rem;
-      width: 2.4615384615rem; }
+      width: 2.4615384615rem;
+      font-size: 0.4rem; }
   .cut .cut_ok {
     position: fixed;
     bottom: 0.6153846154rem;
@@ -266,7 +267,8 @@ input, select, button {
       border-radius: 3.0769230769rem;
       border: 0;
       height: 1.2307692308rem;
-      width: 2.4615384615rem; }
+      width: 2.4615384615rem;
+      font-size: 0.4rem; }
 
 .save {
   z-index: 11;
