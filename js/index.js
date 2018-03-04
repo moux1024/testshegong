@@ -8,7 +8,9 @@ document.ontouchmove = function(event) {
 
 document.querySelector('#file-input').onchange = function(event) {
 	const file = event.target.files[0];
-	transformFileToDataUrl(file)
+	if (file !== undefined) {
+		transformFileToDataUrl(file)
+	}
 }
 
 
