@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/flexible.js"></script>
+	<link rel="stylesheet" href="scss/index.css" />
+	<title>我是明星</title>
+	<style>
+		input[type="date"]:before{
+		    color:#A9A9A9;
+		    content:attr(placeholder);
+		}
+		
+		input[type="date"].full:before {
+		    color:black;
+		    content:""!important;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="emblem">
+            <img src="img/emblem.png" />
+        </div>
+        <div class="img">
+        	<span class="shu"></span>
+        	<span class="heng"></span>
+        </div>
+        <div class="set">
+        	<div class="dashed"></div>
+        	<div class="upload">
+        		<div>上传照片</div>
+        		<input type="file" id="file-input" name="image" accept="image/*" />
+        	</div>
+			<div class="name"><input id="name" type="text" placeholder="姓名"></div>
+			<div class="type">
+				<select id="type" onchange="selects(this.value)">					
+					 <option value='yes' selected>我是社工</option>
+					<option value='no'>我不是社工</option>
+				</select>
+			</div>
+			<div class="date"><input type="date" id="date" placeholder="加入日期" onchange="dates(this)"></div>
+			<div class="erro"></div>
+			<button class="generate" ontouchend="generate()">立即生成</button>
+        </div>
+        <div class="get">
+        	<div class="timing yes_t">
+        		<span class="qian"></span>
+        		<span class="bai"></span>
+        		<span class="shi"></span>
+        		<span class="ge"></span>
+        		<div class="yes_t">DAYS</div>
+        	</div>
+        	<div class="text">
+        		<div class="textName">
+        			<div class='get_name'></div>
+					<div>我为青少年事务社工<span class="yes_t1">代言</span></div>
+					<div class="call">打CALL</div>
+        		</div>
+        		<div class="textTime">
+        			<div style="font-family: 'DIN-Regular','Microsoft YaHei','Heiti SC'">2018年3月20日</div>
+					<div style="font-family:'PingFangSC-Regular','Microsoft YaHei','Heiti SC'">世界社会工作日</div>
+					<div style="font-family:'PingFangSC-Regular','Microsoft YaHei','Heiti SC'" class="yes_t get_date"></div>
+        		</div>
+        		<div class="qr">
+        			<div class="qr_img">
+        				<img src="img/qr.png">
+        			</div>
+        			<div class="qr_text">
+        				<div>扫描二维码</div>
+						<div>制作属于你的社工日历</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="save hei0">长按保存图片分享到朋友圈</div>
+	</div>
+	<div class="cut">
+		<div class="cut_close">
+			<button id="close" class="close">取消</button>
+		</div>
+		<div class="cut_ok">
+			<button id="ok" class="ok">使用</button>		
+		</div>
+	</div>
+	<div class="download"></div>
+	<script type="text/javascript" src="js/iscroll-zoom-min.js"></script>
+	<script type="text/javascript" src="js/lrz.all.bundle.js"></script>
+	<script type="text/javascript" src="js/hammer.min.js"></script>
+	<script type="text/javascript" src="js/PhotoClip.js"></script>
+	<script type="text/javascript" src="js/exif.js"></script>
+	<script type="text/javascript" src="js/canvas2image.js"></script>
+	<script type="text/javascript" src="js/html2canvas.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
