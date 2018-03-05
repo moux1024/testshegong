@@ -262,7 +262,7 @@ input, select, button {
     right: 0.6153846154rem;
     z-index: 12; }
     .cut .cut_ok button {
-      background: #1B9AF7;
+      background: red;
       color: #fff;
       border-radius: 3.0769230769rem;
       border: 0;
