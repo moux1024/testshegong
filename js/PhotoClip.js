@@ -765,7 +765,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 this._$clipLayer = utils.createElement($container, 'photo-clip-layer', {
                     'position': 'absolute',
                     'left': '50%',
-                    'top': '0'
+                    'top': '50%',
+		    'background-color': 'rgb(0,0,0)'
                 });
 
                 this._$moveLayer = utils.createElement(this._$clipLayer, 'photo-clip-move-layer');
@@ -808,7 +809,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                     'right': 0,
                     'top': 0,
                     'bottom': '50%',
-                    'background-color': 'red'
+                    'background-color': maskColor
                 });
                 this._$mask_bottom = utils.createElement($mask, 'photo-clip-mask-bottom', {
                     'position': 'absolute',
