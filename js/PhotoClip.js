@@ -765,7 +765,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 this._$clipLayer = utils.createElement($container, 'photo-clip-layer', {
                     'position': 'absolute',
                     'left': '50%',
-                    'top': '50%'
+                    'top': '0'
                 });
 
                 this._$moveLayer = utils.createElement(this._$clipLayer, 'photo-clip-move-layer');
