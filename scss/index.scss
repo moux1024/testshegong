@@ -19,10 +19,10 @@ html,body{
 	z-index: 2;
   @extend %poa;
   @include width(60);
-  @include top(35);
-  @include left(35);
+  @include top(25);
+  @include left(25);
   img{
-    @include width(60);
+    @include width(60*0.9);
   }
 }
 .get{
@@ -97,7 +97,7 @@ html,body{
 .name{
 	@extend %por;
 	@extend %lrauto;
-	@include mt(20);
+	@include mt(12);
 	@include width(272);
 	@include height(36);
 	font-family:"PingFangSC-Regular";
@@ -114,7 +114,7 @@ html,body{
 .type{
 	@extend %por;
 	@extend %lrauto;
-	@include mt(20);
+	@include mt(12);
 	@include width(272);
 	@include height(36);
 	font-family:"PingFangSC-Regular","Microsoft YaHei","Heiti SC";
@@ -149,7 +149,7 @@ html,body{
 .date{
 	@extend %por;
 	@extend %lrauto;
-	@include mt(20);
+	@include mt(12);
 	@include width(272);
 	@include height(36);
 	font-family:"PingFangSC-Regular","Microsoft YaHei","Heiti SC";
@@ -169,21 +169,32 @@ html,body{
 	color: red;
 	width:$bai;
 	@extend %tc;
-	@include bottom(45);
+	@include bottom(70);
 	@include fsz(12);
 }
-.generate{
+.generate_all{
 	width:$bai;
 	position: fixed;
-	border:0;
 	bottom: 0;
 	font-family: "PingFangSC-Medium","Microsoft YaHei","Heiti SC";
-	@extend %bgc;
-	@extend %cff;
 	@extend %tc;
-	@include height(45);
-	@include lineheight(45);
-	@include fsz(15);
+	.generate{
+		width:88%;
+		border:0;
+		@extend %bgc;
+		@extend %cff;
+		@include height(45);
+		@include lineheight(45);
+		@include fsz(15);
+		@include borderRadius(5);
+	}
+	div{
+		background:#f9f8f8;
+		color:#333;
+		@include lineheight(25);
+		@include height(25);
+		@include fsz(12);
+	}
 }
 .timing{
 	z-index: 2;

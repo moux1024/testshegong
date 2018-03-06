@@ -1,7 +1,7 @@
-.upload, .generate, .timing span {
+.upload, .generate_all .generate, .timing span {
   color: #fff; }
 
-.upload, .generate {
+.upload, .generate_all .generate {
   background-color: #D33838; }
 
 .emblem, .img .shu, .img .heng, .upload div, .timing div, .qr .qr_text, .download, .cut, .save {
@@ -10,7 +10,7 @@
 .img, .dashed, .upload, .name, .type, .date, .timing, .text, .qr {
   position: relative; }
 
-.upload, .erro, .generate, .timing span, .save {
+.upload, .erro, .generate_all, .timing span, .save {
   text-align: center; }
 
 .img .shu, .img .heng, .upload, .upload div, .name, .type, .date, .save {
@@ -44,10 +44,10 @@ input, select, button {
 .emblem {
   z-index: 2;
   width: 1.8461538462rem;
-  top: 1.0769230769rem;
-  left: 1.0769230769rem; }
+  top: 0.7692307692rem;
+  left: 0.7692307692rem; }
   .emblem img {
-    width: 1.8461538462rem; }
+    width: 1.6615384615rem; }
 
 .get {
   display: none; }
@@ -99,7 +99,7 @@ input, select, button {
     border-radius: 3.0769230769rem; }
 
 .name {
-  margin-top: 0.6153846154rem;
+  margin-top: 0.3692307692rem;
   width: 8.3692307692rem;
   height: 1.1076923077rem;
   font-family: "PingFangSC-Regular";
@@ -113,7 +113,7 @@ input, select, button {
     font-size: 0.3692307692rem; }
 
 .type {
-  margin-top: 0.6153846154rem;
+  margin-top: 0.3692307692rem;
   width: 8.3692307692rem;
   height: 1.1076923077rem;
   font-family: "PingFangSC-Regular","Microsoft YaHei","Heiti SC"; }
@@ -144,7 +144,7 @@ input, select, button {
     margin-top: -0.1230769231rem; }
 
 .date {
-  margin-top: 0.6153846154rem;
+  margin-top: 0.3692307692rem;
   width: 8.3692307692rem;
   height: 1.1076923077rem;
   font-family: "PingFangSC-Regular","Microsoft YaHei","Heiti SC"; }
@@ -162,18 +162,27 @@ input, select, button {
   position: fixed;
   color: red;
   width: 100%;
-  bottom: 1.3846153846rem;
+  bottom: 2.1538461538rem;
   font-size: 0.3692307692rem; }
 
-.generate {
+.generate_all {
   width: 100%;
   position: fixed;
-  border: 0;
   bottom: 0;
-  font-family: "PingFangSC-Medium","Microsoft YaHei","Heiti SC";
-  height: 1.3846153846rem;
-  line-height: 1.3846153846rem;
-  font-size: 0.4615384615rem; }
+  font-family: "PingFangSC-Medium","Microsoft YaHei","Heiti SC"; }
+  .generate_all .generate {
+    width: 88%;
+    border: 0;
+    height: 1.3846153846rem;
+    line-height: 1.3846153846rem;
+    font-size: 0.4615384615rem;
+    border-radius: 0.1538461538rem; }
+  .generate_all div {
+    background: #f9f8f8;
+    color: #333;
+    line-height: 0.7692307692rem;
+    height: 0.7692307692rem;
+    font-size: 0.3692307692rem; }
 
 .timing {
   z-index: 2;

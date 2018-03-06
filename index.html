@@ -35,12 +35,15 @@
 			<div class="type">
 				<select id="type" onchange="selects(this.value)">					
 					 <option value='yes' selected>我是社工</option>
-					<option value='no'>我不是社工</option>
+					<option value='no'>我是社工支持者</option>
 				</select>
 			</div>
 			<div class="date"><input type="date" id="date" placeholder="加入日期" onchange="dates(this)"></div>
 			<div class="erro"></div>
-			<button class="generate" ontouchend="generate()">立即生成</button>
+			<div class="generate_all">
+				<button class="generate" ontouchend="generate()">立即生成</button>
+				<div>共青团中央社会联络部制作</div>
+			</div>
         </div>
         <div class="get">
         	<div class="timing yes_t">
@@ -87,7 +90,6 @@
 	<script type="text/javascript" src="js/lrz.all.bundle.js"></script>
 	<script type="text/javascript" src="js/hammer.min.js"></script>
 	<script type="text/javascript" src="js/PhotoClip.js"></script>
-	<script type="text/javascript" src="js/exif.js"></script>
 	<script type="text/javascript" src="js/canvas2image.js"></script>
 	<script type="text/javascript" src="js/html2canvas.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
