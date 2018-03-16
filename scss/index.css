@@ -230,6 +230,8 @@ input, select, button {
     font-family: "PingFangSC-Regular","Microsoft YaHei","Heiti SC";
     left: 2.4615384615rem;
     bottom: 0; }
+    .qr .qr_text .tzy {
+      font-size: 0.5538461538rem; }
 
 .download {
   display: none;

@@ -255,6 +255,9 @@ html,body{
 		@extend %poa;
 		@include left(80);
 		bottom:0;
+		.tzy{
+			@include fsz(18);
+		}
 	}
 }
 
